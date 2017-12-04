@@ -1,12 +1,11 @@
-function drawTree(height) {
-  for(var i = 0; i < height; i++) {
+function drawTree(heightTree) {
+  for(var i = 0; i < heightTree; i++) {
     var line = "";
-    for(var j = 0; j < (height - i); j++) {
+    for(var j = 0; j < (heightTree - i); j++) {
       line += " ";}
       for(var k = 0; k <= i*2; k++) {
         line += "*";
       }
-    
     console.log(line);
   }
 }
